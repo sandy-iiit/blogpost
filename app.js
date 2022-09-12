@@ -87,6 +87,6 @@ app.get("/posts/:postID", function(req, res){
   });
 });
 
-app.listen(9000, function() {
+app.listen(process.env.PORT||9000, function() {
   console.log("Server started on port 3000");
 });
